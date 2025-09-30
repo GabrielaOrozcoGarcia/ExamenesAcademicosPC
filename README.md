@@ -4,8 +4,8 @@ Este proyecto implementa un modelo de dominio para gestionar alumnos, profesores
 Se aplican los principios de Domain-Driven Design (DDD) y Arquitectura Hexagonal (Ports & Adapters), asegurando un modelo expresivo, consistente y desacoplado de la infraestructura tecnica.
 
 Estructura del Proyecto
-src/main/java/co/edu/udec/examenesacademicos                  
 
+src/main/java/co/edu/udec/examenesacademicos                  
 │
 ├── application
 │   ├── ports
