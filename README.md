@@ -3,28 +3,6 @@ Sistema de Exámenes Académicos
 Este proyecto implementa un modelo de dominio para gestionar alumnos, profesores, asignaturas y evaluaciones académicas (controles escritos, prácticas, exámenes).
 Se aplican los principios de Domain-Driven Design (DDD) y Arquitectura Hexagonal (Ports & Adapters), asegurando un modelo expresivo, consistente y desacoplado de la infraestructura técnica.
 
-Estructura del Proyecto
-
-src/main/java/co/edu/udec/examenesacademicos
-│
-├── application
-│   ├── ports
-│   │   ├── in              # Interfaces de casos de uso (input)
-│   │   └── out             # Interfaces hacia infraestructura (output)
-│   └── services            # Implementación de casos de uso
-│
-├── domain
-│   ├── events              # Eventos de dominio (ej: NotaRegistradaEvent)
-│   ├── exceptions          # Excepciones de negocio (ej: NotaInvalidaException)
-│   ├── factories           # Creación compleja de entidades/agregados (ej: EvaluacionFactory)
-│   ├── model               # Entidades y Agregados (ej: Alumno, Evaluacion)
-│   ├── services            # Servicios de dominio (ej: CalculoPromedioService)
-│   ├── specifications      # Reglas de negocio reutilizables (ej: NotaAprobatoriaSpecification)
-│   └── valueobjects        # Objetos de Valor inmutables (ej: Nota, Fecha, Matricula)
-│
-└── infrastructure
-├── adapters            # Implementaciones de puertos de salida (repositorios, notificaciones)
-└── mappers             # Conversión entre entidades de dominio y DTOs/persistencia
 
 Patrones aplicados y justificación
 1. Value Objects (Objetos de Valor)
